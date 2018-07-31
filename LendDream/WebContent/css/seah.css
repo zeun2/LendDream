@@ -1,0 +1,140 @@
+.search{
+   display: flex;
+   margin-bottom: 1.5rem;
+}
+
+.dib1, .dib2{
+   background: none; 
+   border: none;
+   color: red;
+   cursor:pointer;
+}
+      
+.dib1:after {
+    content: ' \2661';
+}
+      
+.dib2:after {
+    content: ' \2665';
+}
+
+.mylend{
+   float: right;
+}
+.calculate {
+	background-color: white;
+	border: 1px solid #83d8ff;
+	border-radius: 10px;
+}
+
+.calculate:hover {
+	background-color: #83d8ff;
+	border: 1px solid white;
+	color: white;
+}
+
+input {
+	margin : 0 1rem;
+}
+	
+.flex {
+	display : flex;
+}
+	
+select.form-control {
+   	margin-left: 1rem;
+}
+	
+.panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+	
+.panel-info {
+    border-color: #bce8f1;
+    width: 600px;
+    padding: 1rem;
+}
+	
+.panel-info>.panel-heading{
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+	
+.panel-heading {
+   npadding: 10px 15px;
+   border-bottom: 1px solid transparent;
+   border-top-left-radius: 3px;
+   border-top-right-radius: 3px;
+}
+
+/* 택배 선택 */
+/* The delivery */
+.delivery {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    margin-left: 15px;
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.delivery input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.delivery input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.delivery input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.delivery .checkmark:after {
+ 	top: 6px;
+	left: 6px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
